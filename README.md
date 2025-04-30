@@ -30,3 +30,8 @@
 ```bash
 git clone https://github.com/meetmeonlinefree/todo-api.git
 cd todo-api
+
+### 1. Установка композера
+
+```bash
+composer install
