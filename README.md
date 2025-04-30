@@ -9,17 +9,12 @@
 
 | Метод  | Endpoint           | Описание                      |
 |--------|--------------------|-------------------------------|
-| GET    | `/api/tasks`       | Получить список всех задач   |
-| GET    | `/api/tasks/{id}`  | Получить одну задачу по id   |
-| POST   | `/api/tasks`       | Создать новую задачу         |
-| PUT    | `/api/tasks/{id}`  | Обновить задачу              |
-| DELETE | `/api/tasks/{id}`  | Удалить задачу               |
+| GET    | `http://127.0.0.1:8000/api/tasks`       | Получить список всех задач   |
+| GET    | `http://127.0.0.1:8000/api/tasks/{id}`  | Получить одну задачу по id   |
+| POST   | `http://127.0.0.1:8000/api/tasks`       | Создать новую задачу         |
+| PUT    | `http://127.0.0.1:8000/api/tasks/{id}`  | Обновить задачу              |
+| DELETE | `http://127.0.0.1:8000/api/tasks/{id}`  | Удалить задачу               |
 
-### Поля задачи
-
-- `title` *(string, required)* — название задачи  
-- `description` *(string, optional)* — описание задачи  
-- `status` *(enum: pending, in_progress, completed)* — статус задачи
 
 ---
 
@@ -30,3 +25,8 @@
 ```bash
 git clone https://github.com/meetmeonlinefree/todo-api.git
 cd todo-api
+composer install
+php artisan migrate
+php artisan serve
+
+-- база данных -  todo-api.sql --
