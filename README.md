@@ -17,8 +17,8 @@
 
 ### Поля задачи
 
-- `title` *(string, required)* — название задачи
-- `description` *(string, optional)* — описание задачи
+- `title` *(string, required)* — название задачи  
+- `description` *(string, optional)* — описание задачи  
 - `status` *(enum: pending, in_progress, completed)* — статус задачи
 
 ---
@@ -30,8 +30,3 @@
 ```bash
 git clone https://github.com/meetmeonlinefree/todo-api.git
 cd todo-api
-
-### 1. Установка композера
-
-```bash
-composer install
